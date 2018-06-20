@@ -1,0 +1,36 @@
+{
+                    "name": "restaurants",
+                    "values": [
+                        {
+                            "egg shop": {
+                                "location": "The egg shop is located in the student center on the north side of campus",
+                                "outputText" : "The egg shop is located in the student center. \n Thank you have a great day!"
+                            }
+                        },
+                        {
+                            "dunkin donuts": {
+                                "location": "Dunkin donuts is located behind Calkins Hall and infront of roosevelt hall.",
+                                "outputText" : "Dunkin donuts is located behind Calkins Hall. \n Have a great Day!"
+                                
+                            }
+                        },
+                        {
+                            "smash burger": {
+                                "location": "Smash Burger is located on the north side of campus at Hofstra USA",
+                                "outputText" : "Smash Burger is located at Hofstra USA. \n Have a great day!"
+                            }
+                        },
+                        {
+                            "bits and bites": {
+                                "location": "bits and bites is located on the south side of campus at Memorial Hall",
+                                "outputText" : "Bits and Bites is located at Memorial Hall. \n Have a great day!"
+                            }
+                        },
+                        {
+                            "student center cafe": {
+                                "location": " The student center cafe is located on the north side of campus in the student center",
+                                "outputText" : "The student center cafe is located in the student center. \n Have a great day!"
+                            }
+                        }
+                    ]
+                }

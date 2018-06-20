@@ -1,0 +1,77 @@
+{
+    "name": "food",
+    "values": [
+        {
+            "name": {
+                "name": "hamburger",
+                "value": "you should look into going to Bits and Bites, or Smash Buger on the norther half of campus at Hofstra USA",
+                "location" : " bits and bites is located at Memorial Hall number 1 on the map. Smash Burger is located at Hofstra USA number 40",
+                "output": "Bits and bites is located at Memorial Hall. \n Smash Burger is located at Hofstra USA. \n Have a great Day!!"
+            }
+        },
+        {
+            "name": {
+                "name":"pizza",
+                "value": "you should try sbarro pizza in the student center. There is also good pizza at Hof USA ",
+                "location": "sbarro is located in the student center number 31 on the map.", 
+                "output": "Sbarro is located in the student center. Have a great day!"
+            }
+        },
+        {
+            "name": {
+                "name":"frozen yogurt",
+                "value": "You should try red mango in bits and bites.", 
+                "location":" bits and bites is located at Memorial Hall number 1 on the map. ",
+                "output": "Red Mango is located in Memorial Hall. Have a great day!"
+            }
+        },
+        {
+            "name":{
+                "name": "eggs",
+                "value": "You should try the egg shop ",
+                "location": "The egg shop is located in the student center number 31 on the map", 
+                "output": "The egg shop is located in the student center. Have a great day"
+            }
+        },
+        {
+            "name": {
+                "name": "egg sandwich",
+                "value": "You should try the egg shop in the student center",
+                "location": "The egg shop is located in the student center number 31 on the map", 
+                "output": "The egg shop is located in the student center. Have a great day"
+            }
+        },
+        {
+            "name": {
+                "name":"breakfast",
+                "value": "You should try the egg shop in the student center",
+                "location": "The egg shop is located in the student center number 31 on the map", 
+                "output": "The egg shop is located in the student center. Have a great day"
+            }
+        },
+        {
+            "name": {
+                "name": "ice cream",
+                "value": "You should try red mango in bits and bites.",
+                "location":" bits and bites is located at Memorial Hall number 1 on the map. ",
+                "output": "Red Mango is located in Memorial Hall. Have a great day!"
+            }
+        },
+        {
+            "name": {
+                "name": "cheese burger",
+                "value": "you should look into going to Bits and Bites, or Smash Buger on the norther half of campus at Hofstra USA",
+                "location" : " bits and bites is located at Memorial Hall number 1 on the map. Smash Burger is located at Hofstra USA number 40",
+                "output": "Bits and bites is located at Memorial Hall. \n Smash Burger is located at Hofstra USA. \n Have a great Day!!"
+            }
+        },
+        {
+            "name":{
+                "name": "lunch", 
+                "value": "There are many options to choose. Some of my favorite are Bits and Bites, Smash Burger, and the student center cafe. ",
+                "location": " Bits and Bites is located at Memorial Hall number 1 on the map. Smash Burger is located at Hofstra USA number 40 and the student center Cafe is located at number 31",
+                "output": "Bits and bites is located at Memorial Hall. \n Smash Burger is located at Hofstra USA. \n The student center cafe is located in the student center. \n Have a great Day!!"
+            }
+        }
+    ]
+}
