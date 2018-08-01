@@ -1,6 +1,2 @@
 # Alexa_for_Hofstra
-This is my senior design project. We are working on building a device off of a raspberry pi that will display and tell 
-information about hofstra when asked. We will be creating a app on the alexa that will be able to handle queries related to 
-information about hofstra. 
-
-The project is currently in prgress but as files become avaliable it will be displayed here. 
+This is my senior design project. Me and my partner worked on creating this alexa skill. The main portion of this project was in python under lamada_function.py and requires to be run on amazon aws. The other main file that creates the voice inter face on alexa skill services is AlexaSkill.json. These two files run on the different services and provide information back and forth depending on what question was asked. You are welcome to view the code and how it was typed but will not be able to run the code unless on alexa serives and amazon aws. 
