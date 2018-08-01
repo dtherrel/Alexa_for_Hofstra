@@ -1,0 +1,952 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "kate",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Building_locations",
+                    "slots": [
+                        {
+                            "name": "building",
+                            "type": "buildings",
+                            "samples": [
+                                "ActivateSceneIntent activate {building}",
+                                "where is {building}",
+                                "I am looking for {building}",
+                                "its {building}",
+                                "{building}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "where {building} is ",
+                        "where a building is ",
+                        "want to know a building location",
+                        "Is there a {building}",
+                        "How do I get to {building}",
+                        "Where is {building}",
+                        "{building}",
+                        "location of {building}"
+                    ]
+                },
+                {
+                    "name": "locatordepartments",
+                    "slots": [
+                        {
+                            "name": "department",
+                            "type": "departments"
+                        }
+                    ],
+                    "samples": [
+                        "where is the {department}",
+                        "Where is {department}"
+                    ]
+                },
+                {
+                    "name": "RandomFacts",
+                    "slots": [
+                        {
+                            "name": "department",
+                            "type": "departments"
+                        }
+                    ],
+                    "samples": [
+                        "Who is the department of {department}"
+                    ]
+                },
+                {
+                    "name": "Resturant_locator",
+                    "slots": [
+                        {
+                            "name": "restaurants",
+                            "type": "restaurants"
+                        }
+                    ],
+                    "samples": [
+                        "to tell me where {restaurants}",
+                        "Where is {restaurants} "
+                    ]
+                },
+                {
+                    "name": "Faculty",
+                    "slots": [
+                        {
+                            "name": "professors",
+                            "type": "professors",
+                            "samples": [
+                                "its {professors}",
+                                "the professors name is {professors}",
+                                "{professors}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "where is the office of {professors}",
+                        "where {professors} is",
+                        "where is {professors} located ",
+                        "where is {professors}"
+                    ]
+                },
+                {
+                    "name": "Officehour",
+                    "slots": [
+                        {
+                            "name": "professors",
+                            "type": "professors",
+                            "samples": [
+                                "{professors}",
+                                "The professor is {professors}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What are the office hours of {professors} ",
+                        "what is {professors} avaliablity ",
+                        "I need to know the office hours of a professor",
+                        "What is {professors} office hours"
+                    ]
+                },
+                {
+                    "name": "DPfinder",
+                    "slots": [
+                        {
+                            "name": "professors",
+                            "type": "professors",
+                            "samples": [
+                                "its {professors}",
+                                "{professors}",
+                                "the professor name is {professors}"
+                            ]
+                        },
+                        {
+                            "name": "department",
+                            "type": "departments"
+                        }
+                    ],
+                    "samples": [
+                        "does {professors} work in {department}",
+                        "what department does {professors}"
+                    ]
+                },
+                {
+                    "name": "Resturant_locator_food",
+                    "slots": [
+                        {
+                            "name": "food",
+                            "type": "food"
+                        }
+                    ],
+                    "samples": [
+                        "is there a place to get {food}",
+                        "Where can I get a {food}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "buildings",
+                    "values": [
+                        {
+                            "id": "38",
+                            "name": {
+                                "value": "Vander Poel Hall"
+                            }
+                        },
+                        {
+                            "id": "45",
+                            "name": {
+                                "value": "Suffolk Hall "
+                            }
+                        },
+                        {
+                            "id": "32",
+                            "name": {
+                                "value": "Stuyvesant Hall"
+                            }
+                        },
+                        {
+                            "id": "33",
+                            "name": {
+                                "value": "The Netherlands "
+                            }
+                        },
+                        {
+                            "id": "44",
+                            "name": {
+                                "value": "Nassau Hall "
+                            }
+                        },
+                        {
+                            "id": "74",
+                            "name": {
+                                "value": "Graduate Hall "
+                            }
+                        },
+                        {
+                            "id": "37",
+                            "name": {
+                                "value": "Estabrook Hall"
+                            }
+                        },
+                        {
+                            "id": "39",
+                            "name": {
+                                "value": "Enterprise Hall "
+                            }
+                        },
+                        {
+                            "id": "36",
+                            "name": {
+                                "value": "Constitution Hall"
+                            }
+                        },
+                        {
+                            "id": "46",
+                            "name": {
+                                "value": "Colonial Square"
+                            }
+                        },
+                        {
+                            "id": "35",
+                            "name": {
+                                "value": "Bill of Rights"
+                            }
+                        },
+                        {
+                            "id": "34",
+                            "name": {
+                                "value": "Alliance Hall"
+                            }
+                        },
+                        {
+                            "id": "50",
+                            "name": {
+                                "value": "Donald and Barbara Zucker School of Medicine at Hofstra/Northwell "
+                            }
+                        },
+                        {
+                            "id": "29",
+                            "name": {
+                                "value": "West Library Wing"
+                            }
+                        },
+                        {
+                            "id": "42",
+                            "name": {
+                                "value": "Wellness and Campus Living Center "
+                            }
+                        },
+                        {
+                            "id": "16",
+                            "name": {
+                                "value": "Weller Hall "
+                            }
+                        },
+                        {
+                            "id": "72",
+                            "name": {
+                                "value": "baseball field "
+                            }
+                        },
+                        {
+                            "id": "30",
+                            "name": {
+                                "value": "Unispan ",
+                                "synonyms": [
+                                    "Pedestrian Bridges"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "24",
+                            "name": {
+                                "value": "Tennis Courts"
+                            }
+                        },
+                        {
+                            "id": "31",
+                            "name": {
+                                "value": "Sondra and David S. Mack Student Center ",
+                                "synonyms": [
+                                    "student center "
+                                ]
+                            }
+                        },
+                        {
+                            "id": "56",
+                            "name": {
+                                "value": "James M Shuart Stadium",
+                                "synonyms": [
+                                    "Stadium"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "51",
+                            "name": {
+                                "value": "David S. Mack sports and Exhibition Complex ",
+                                "synonyms": [
+                                    "Sports and Exhibition Complex "
+                                ]
+                            }
+                        },
+                        {
+                            "id": "13",
+                            "name": {
+                                "value": "Spiegel Theater"
+                            }
+                        },
+                        {
+                            "id": "71",
+                            "name": {
+                                "value": "Soccer Stadium"
+                            }
+                        },
+                        {
+                            "id": "48",
+                            "name": {
+                                "value": "Hofstra Dome"
+                            }
+                        },
+                        {
+                            "id": "20",
+                            "name": {
+                                "value": "Herbert School of Communication",
+                                "synonyms": [
+                                    "The Lawrence"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "name": {
+                                "value": "Heger Hall"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "Hauser Hall"
+                            }
+                        },
+                        {
+                            "id": "55",
+                            "name": {
+                                "value": "Hagedorn Hall"
+                            }
+                        },
+                        {
+                            "id": "63",
+                            "name": {
+                                "value": "Gittleson Hall"
+                            }
+                        },
+                        {
+                            "id": "62",
+                            "name": {
+                                "value": "Fortune Theater",
+                                "synonyms": [
+                                    "The Helene",
+                                    "Monroe Lecture Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "47",
+                            "name": {
+                                "value": "Fitness Center",
+                                "synonyms": [
+                                    "David S Mack fitness Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "77",
+                            "name": {
+                                "value": "Field Hockey Stadium"
+                            }
+                        },
+                        {
+                            "id": "9",
+                            "name": {
+                                "value": "Emily Lowe Gallery",
+                                "synonyms": [
+                                    "Emily Lowe Hall",
+                                    "Hofstra University Museum"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "21",
+                            "name": {
+                                "value": "Deans School of Law",
+                                "synonyms": [
+                                    "Maurice A. Building"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "8",
+                            "name": {
+                                "value": "Davison Hall"
+                            }
+                        },
+                        {
+                            "id": "60",
+                            "name": {
+                                "value": "C. V. Starr Hall"
+                            }
+                        },
+                        {
+                            "id": "43",
+                            "name": {
+                                "value": "Oak Street Center",
+                                "synonyms": [
+                                    "Skodnek Business Development Center",
+                                    "Business Development Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "64",
+                            "name": {
+                                "value": "Career Center",
+                                "synonyms": [
+                                    "M. Robert Lowe Hall"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "14",
+                            "name": {
+                                "value": "Calkins Hall"
+                            }
+                        },
+                        {
+                            "id": "15",
+                            "name": {
+                                "value": "Cafe on the Quad"
+                            }
+                        },
+                        {
+                            "id": "65",
+                            "name": {
+                                "value": "Butler Annex"
+                            }
+                        },
+                        {
+                            "id": "78",
+                            "name": {
+                                "value": "Bubble"
+                            }
+                        },
+                        {
+                            "id": "11",
+                            "name": {
+                                "value": "Brower Hall"
+                            }
+                        },
+                        {
+                            "id": "23",
+                            "name": {
+                                "value": "Breslin Hall"
+                            }
+                        },
+                        {
+                            "id": "75",
+                            "name": {
+                                "value": "Bill Edwards Stadium",
+                                "synonyms": [
+                                    "softball"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "61",
+                            "name": {
+                                "value": "Berliner Hall"
+                            }
+                        },
+                        {
+                            "id": "10",
+                            "name": {
+                                "value": "Bernard Hall"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "Axinn Library",
+                                "synonyms": [
+                                    "Joan Donald E.",
+                                    "Filderman Gallery",
+                                    "Library Technical Services"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "66",
+                            "name": {
+                                "value": "Axinn Hall",
+                                "synonyms": [
+                                    "Law School",
+                                    "Joan"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "18",
+                            "name": {
+                                "value": "Au Bon Pain"
+                            }
+                        },
+                        {
+                            "id": "27",
+                            "name": {
+                                "value": "Admissions Center",
+                                "synonyms": [
+                                    "Bernon Hall",
+                                    "Admissions"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "12",
+                            "name": {
+                                "value": "Adams Playhouse",
+                                "synonyms": [
+                                    "Toni and Martin",
+                                    "Sosnoff Theater",
+                                    "John Craford"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "25",
+                            "name": {
+                                "value": "Adams Hall"
+                            }
+                        },
+                        {
+                            "id": "26",
+                            "name": {
+                                "value": "Weed Hall"
+                            }
+                        },
+                        {
+                            "id": "7",
+                            "name": {
+                                "value": "Hofstra Hall"
+                            }
+                        },
+                        {
+                            "id": "53",
+                            "name": {
+                                "value": "Hofstra University Club",
+                                "synonyms": [
+                                    "David S. Mack Hall",
+                                    "Mack Hall"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "40",
+                            "name": {
+                                "value": "Hofstra USA"
+                            }
+                        },
+                        {
+                            "id": "52",
+                            "name": {
+                                "value": "Human Resources Center"
+                            }
+                        },
+                        {
+                            "id": "22",
+                            "name": {
+                                "value": "Kushner Hall"
+                            }
+                        },
+                        {
+                            "id": "57",
+                            "name": {
+                                "value": "Margiotta Hall"
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "name": {
+                                "value": "Mason Hall",
+                                "synonyms": [
+                                    "Gallon Wing"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "17",
+                            "name": {
+                                "value": "McEwen Hall"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "Memorial Hall"
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "name": {
+                                "value": "Phillips Hall"
+                            }
+                        },
+                        {
+                            "id": "49",
+                            "name": {
+                                "value": "Physical Education Center",
+                                "synonyms": [
+                                    "David S. Mack Swim Center",
+                                    "Swim Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "59",
+                            "name": {
+                                "value": "Physical Plant"
+                            }
+                        },
+                        {
+                            "id": "54",
+                            "name": {
+                                "value": "Public Safety and Information Center",
+                                "synonyms": [
+                                    "Public Safety"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "19",
+                            "name": {
+                                "value": "Roosevelt Hall"
+                            }
+                        },
+                        {
+                            "id": "28",
+                            "name": {
+                                "value": "Saltzman Community Services"
+                            }
+                        },
+                        {
+                            "id": "73",
+                            "name": {
+                                "value": "Schaeffer Black Box Theater",
+                                "synonyms": [
+                                    "Shapiro Family Hall"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "58",
+                            "name": {
+                                "value": "Shapiro Alumni House",
+                                "synonyms": [
+                                    "Libby and Joseph G."
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "departments",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "department"
+                            }
+                        },
+                        {
+                            "id": "25",
+                            "name": {
+                                "value": "computer science Department",
+                                "synonyms": [
+                                    "Computer Science"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "16",
+                            "name": {
+                                "value": "Accounting"
+                            }
+                        },
+                        {
+                            "id": "26",
+                            "name": {
+                                "value": "Engineering Department"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "professors",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "doctor krish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "simon doboli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Doctor doboli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dr. Ostheimer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dr. Liang "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dr. Zavou"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dr. Krish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dr. doboli"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "restaurants",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "egg shop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dunkin donuts"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "smash burger "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bits and bites"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "student center cafe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "OfficeHour",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Simon Doboli ",
+                                "synonyms": [
+                                    "doctor doboli "
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dr. Zavou",
+                                "synonyms": [
+                                    "Doctor Doboli "
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "availability "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Office hours"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "food",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "lunch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hamburger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cheese pizza"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "frozen yogurt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eggs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "egg sandwich"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "breakfast"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ice cream"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pizza"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cheese burger"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "Faculty",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "professors",
+                            "type": "professors",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1257162875753.1149184718314"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Officehour",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "professors",
+                            "type": "professors",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.23133409812.38593212023"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DPfinder",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "professors",
+                            "type": "professors",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1210835635634.792868218161"
+                            }
+                        },
+                        {
+                            "name": "department",
+                            "type": "departments",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "Building_locations",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "building",
+                            "type": "buildings",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.426260505266.469851877928"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1257162875753.1149184718314",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the name of the professor "
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.739805696739.934365022",
